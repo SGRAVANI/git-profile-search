@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(238, 238, 238);
+  }
+  .container {
+    max-width: 1250px;
+    width: 100%;
+    /* padding:0 45px; */
+    margin: 0 auto;
+  }
+  .center-pos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  #form {
+    margin-bottom: 4rem;
+  }
+  #search {
+    padding: 7px 14px;
+    /* border-radius: 2%; */
+    border-radius: 10px;
+    border-color: whitesmoke;
+    box-shadow: none;
+    border-style: groove;
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+  }
+  #search:focus {
+    border-radius: 10px;
+    border-color: whitesmoke;
+  }
+  .card {
+    /* width: 30%; */
+    max-width: 810px;
+    width: 100%;
+    background-color: rgb(84, 84, 84);
+    border-radius: 20px;
+    padding: 5% 4%;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: row;
+  }
+  .avtar-holder {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+  }
+  .avtar-holder img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: solid 10px white;
+  }
+  .card-data {
+    /* width: 100%; */
+    padding-left: 8%;
+    color: white;
+  }
+  .card-title {
+    margin-bottom: 1.2rem;
+  }
+  #bio {
+    margin-bottom: 1.1rem;
+  }
+  /* #item5{
+      grid-column:2 /span 2;
+    
+     
+  }
+  .item{
+      text-align: center;
+  }
+  .card-subdata-outer{
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-template-rows:repeat(2,1fr);
+     justify-content: space-between;
+    text-align: start;
+    column-gap: 30px;
+  
+  } */
+  
+  /* .card-holder{
+      width:80%;
+      height:100vh;
+  } */
+  #row1 {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+    /* flex-wrap:wrap; */
+  }
+  #row2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 5px;
+  }
+  .item-title {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  .errorMsg {
+    color: red;
+  
+    text-align: center;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  .error-msg-section {
+    background-color: white;
+    border-radius: 10px;
+    height: 90%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+  
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 4% 7%;
+    }
+    .card-data {
+      /* width: 100%; */
+      padding-left: 2%;
+      text-align: center;
+      padding-top: 1rem;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .container {
+      width: 100%;
+      padding: 0 20px;
+    }
+    .card-body {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .errorMsg {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .error-msg-section {
+      margin-top: 2rem;
+      font-size: 2rem;
+      padding-bottom: 8%;
+    }
+  }
+  

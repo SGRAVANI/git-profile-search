@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital@0;1&family=Open+Sans&family=Outfit:wght@400;700&family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Github Profiles Searcher</title>
+  </head>
+
+  <body>
+    <div class="center-pos">
+      <form id="form">
+        <input type="text" id="search" placeholder="Enter User Id" />
+      </form>
+      <main id="main" class="card"></main>
+    </div>
+    <script src="main.js" type="module"></script>
+    <script type="module">
+      import { getData } from "./main.js";
+      (async function () {
+        let userId;
+        let searchInput = document.getElementById("search");
+        searchInput.addEventListener("input", (e) => {
+          getData(e.target.value);
+        });
+
+        getData(userId);
+      })();
+    </script>
+  </body>
+</html>
